@@ -1,7 +1,6 @@
 <template>
     <nav class="navbar">
       <div class="navbar-container">
-        <!-- Left: Logo + Navigation -->
         <div class="left-section">
           <router-link to="/" class="logo">MyShop</router-link>
           <ul :class="['nav-links', { 'open': isMenuOpen }]">
@@ -12,14 +11,12 @@
           </ul>
         </div>
   
-        <!-- Right: Icons -->
         <div class="right-section">
           <button class="icon-btn" title="Search">🔍</button>
           <button class="icon-btn" title="Cart">🛒</button>
           <button class="icon-btn" title="Wishlist">❤️</button>
           <button class="icon-btn" title="Profile">👤</button>
   
-          <!-- Hamburger for mobile -->
           <button class="hamburger" @click="isMenuOpen = !isMenuOpen">
             <span :class="{ open: isMenuOpen }"></span>
             <span :class="{ open: isMenuOpen }"></span>
@@ -36,7 +33,6 @@
   </script>
   
   <style scoped>
-  /* Navbar container */
   .navbar {
     background-color: #fff;
     border-bottom: 1px solid #eaeaea;
@@ -54,7 +50,6 @@
     align-items: center;
   }
   
-  /* Left section */
   .left-section {
     display: flex;
     align-items: center;
@@ -85,14 +80,12 @@
     color: #007bff;
   }
   
-  /* Right section */
   .right-section {
     display: flex;
     align-items: center;
     gap: 1rem;
   }
   
-  /* Icon buttons */
   .icon-btn {
     background: none;
     border: none;
@@ -105,7 +98,6 @@
     transform: scale(1.2);
   }
   
-  /* Hamburger */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -133,7 +125,6 @@
     transform: rotate(-45deg) translate(5px, -5px);
   }
   
-  /* Responsive */
   @media (max-width: 768px) {
     .nav-links {
       position: absolute;

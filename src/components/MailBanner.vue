@@ -1,6 +1,5 @@
 <template>
   <section class="main-banner">
-    <!-- Top Banner -->
     <div class="top-banner">
       <div class="slogan">
         <h1>Elevate your wardrobe<br />with irresistible fashion finds!</h1>
@@ -20,7 +19,6 @@
       </div>
     </div>
 
-    <!-- Lower Section: Image Grid -->
     <div class="image-grid">
       <div class="left-block">
         <img :src="fashion1" alt="Fashion 1" class="top-img" />
@@ -53,7 +51,6 @@ import fashion4 from '@/assets/images/fashion4.avif'
   margin: auto;
 }
 
-/* Top Banner */
 .top-banner {
   display: flex;
   flex-wrap: wrap;
@@ -109,14 +106,12 @@ import fashion4 from '@/assets/images/fashion4.avif'
   color: #2c3e50;
 }
 
-/* Image Grid */
 .image-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-/* Left side */
 .left-block {
   flex: 1;
   display: flex;
@@ -145,7 +140,6 @@ import fashion4 from '@/assets/images/fashion4.avif'
   border-radius: 8px;
 }
 
-/* Right side */
 .right-block {
   flex: 1;
   min-width: 0;
@@ -158,7 +152,6 @@ import fashion4 from '@/assets/images/fashion4.avif'
   border-radius: 8px;
 }
 
-/* Mobile view */
 @media (max-width: 768px) {
   .top-banner {
     flex-direction: column;
